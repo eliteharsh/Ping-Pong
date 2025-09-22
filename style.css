@@ -1,0 +1,110 @@
+body {
+  background: #74b5ff;
+  color: #333;
+  font-family: 'Segoe UI';
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: Arial;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+canvas {
+  background: #000000;
+  border: 8px dashed #ffffff;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.score-box {
+  padding: 8px 22px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2.5px solid #000000;
+  background: #79ff9a;
+  color: #000000;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 26px;
+  font-size: 16px;
+  font-weight: 600;
+ border: 2.5px solid #000000;  border-radius: 20px;
+  cursor: pointer;
+  background: #79ff9a;
+  color: #000000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#difficulty {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  background: #ffffff;
+  color: #2c3e50;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Winner popup */
+#winner-popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.329);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #79ff9a;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.24);
+  text-align: center;
+}
+
+.popup-content h2 {
+  color: #183d63;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.popup-content button {
+  background: #3498db;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: none;
+}
